@@ -23,15 +23,19 @@
 .nav-menu li img{
     display: flex;
     margin: auto;
+    width: 30px;
 }
 
 .nav-connect{
-    padding: 20px 40px;
-    border-radius: 50px;
-    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.6%);
-    font-size: 22px;
-    cursor: pointer;
-    transition: 0.5s;
+    position: relative;
+    margin-left: 25px;
+}
+
+.colorMode {
+    position: absolute;
+    right: 0;
+    margin-top: -13px;
+    width: 25px;
 }
 
 .nav-connect:hover{
@@ -58,7 +62,15 @@
     }
 
     .nav-connect{
-        display: none;
+        position: fixed;
+        right: 0;
+    }
+
+    .colorMode {
+        position: absolute;
+        right: 80px;
+        margin-top: -13px;
+        width: 25px;
     }
 
     .nav-mob-open{
@@ -100,11 +112,11 @@
 @media (min-width: 768px) and (max-width: 1304px) {
 
     .navbar{
-        margin: 20px 20px;
+        margin: 20px 10px;
     }
 
     .nav-connect{
-        padding: 20px 15px;
+        padding: 20px 5px;
         border-radius: 50px;
         font-size: 16px;
     }
