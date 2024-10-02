@@ -30,6 +30,10 @@
     line-height: 40px;
 }
 
+.hero-links{
+    margin-top: -150px;
+}
+
 .hero-action{
     display: flex;
     align-items: center;
@@ -59,6 +63,13 @@
 
 .hero-resume:hover{
     border-color: #B415FF;
+}
+
+.hover{
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;;
+    background-color: transparent;
+    border: none;
 }
 
 @media (min-width: 250px) and (max-width: 768px){

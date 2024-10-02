@@ -18,8 +18,6 @@ const Hero = () => {
     const githubIcon = theme === 'light' ? githubLight : githubDark;
     const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
 
-
-
   return (
     <div id='home' className='hero'>
       <img src={profile_img} alt="" />
@@ -27,24 +25,28 @@ const Hero = () => {
       <p>I am a frontend developer, with 3 
         years of experience in designing websites like Tesla, Amazon, Disney and Apple.
       </p>
-      <span>
-                <a href="https://twitter.com/" target="_blank">
-                    <img src={twitterIcon} alt="Twitter-icon" />
-                </a>
-                <a href="https://github.com/" target="_blank">
-                    <img src={githubIcon} alt="Github-icon" />
-                </a>
-                <a href="https://linkedin.com/" target="_blank">
-                    <img src={linkedinIcon} alt="Linkedin-icon" />
-                </a>
-            </span>
+        <div className='hero-links'>
+            <a href="https://twitter.com/" target="_blank">
+                <img src={twitterIcon} alt="Twitter-icon" />
+            </a>
+            <a href="https://github.com/DeraJudy/" target="_blank">
+                <img src={githubIcon} alt="Github-icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/chidera-ulu-48023327a/" target="_blank">
+                <img src={linkedinIcon} alt="Linkedin-icon" />
+            </a>
+        </div>
       <div className="hero-action">
         <div className="hero-connect">
           <AnchorLink className='anchor-link' offset={50} href='#contact'>
             Connect With Me
           </AnchorLink>
         </div>
-        <div className='hero-resume'>My resume</div>
+        <a className='hero-resume' href="" download>
+            <button className="hover" >
+              My Resume
+            </button>
+        </a>
       </div>
     </div>
   )
