@@ -32,11 +32,11 @@ const Footer = () => {
         <p className="footer-bottom-left">
             © 2024 Chidera Ulu. All rights reserved.
         </p>
-        <div className="footer-bottom-right">
+        {/* <div className="footer-bottom-right">
             <p>Term of Services</p>
             <p>Privacy Policy</p>
             <p>Connect with me</p>
-        </div>
+        </div> */}
       </div>
     </div>
   )

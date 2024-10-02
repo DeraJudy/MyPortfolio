@@ -107,4 +107,8 @@
         padding: 20px 50px;
         border-radius: 40px;
     }
+
+    .hero-links img{
+        width: 100px;
+    }
 }
