@@ -39,7 +39,7 @@ const Navbar = () => {
         <img src={menu_close} onClick={closeMenu} alt="" className="nav-mob-close" />
         <li className='space'><AnchorLink className='anchor-link' href='#home'><p onClick={()=>setMenu("home")}>Home</p>{menu==="home"?<img src={underline_Icon} alt='' />:<></>}</AnchorLink></li>
         <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={()=>setMenu("about")}>About Me</p>{menu==="about"?<img src={underline_Icon} alt='' />:<></>}</AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#services'><p onClick={()=>setMenu("services")}>Services</p>{menu==="services"?<img src={underline_Icon} alt='' />:<></>}</AnchorLink></li>
+        {/* <li><AnchorLink className='anchor-link' offset={50} href='#services'><p onClick={()=>setMenu("services")}>Services</p>{menu==="services"?<img src={underline_Icon} alt='' />:<></>}</AnchorLink></li> */}
         <li><AnchorLink className='anchor-link' offset={50} href='#work'><p onClick={()=>setMenu("work")}>Portfolio</p>{menu==="work"?<img src={underline_Icon} alt='' />:<></>}</AnchorLink></li>
         <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=>setMenu("contact")}>Contact</p>{menu==="contact"?<img src={underline_Icon} alt='' />:<></>}</AnchorLink></li>
       </ul>
